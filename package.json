@@ -50,10 +50,10 @@
     "three": "^0.89.0"
   },
   "devDependencies": {
+    "@babel/core": "^7.17.5",
+    "@babel/plugin-proposal-class-properties": "^7.16.7",
+    "@babel/preset-env": "^7.16.11",
     "@pixi/jsdoc-template": "^2.2.0",
-    "babel-core": "^6.26.0",
-    "babel-plugin-external-helpers": "^6.22.0",
-    "babel-preset-env": "^1.6.1",
     "chai": "^4.1.2",
     "chalk": "^2.3.0",
     "eslint": "^4.12.1",
@@ -66,8 +66,8 @@
     "karma-phantomjs-launcher": "^1.0.4",
     "mocha": "^4.0.1",
     "npmsrcify": "0.0.2",
-    "rollup": "^0.52.0",
-    "rollup-plugin-babel": "^3.0.2",
+    "rollup": "^2.70.0",
+    "rollup-plugin-babel": "^4.4.0",
     "standard-version": "^4.2.0",
     "three": "^0.91.0",
     "validate-commit-msg": "^2.14.0"

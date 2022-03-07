@@ -1,13 +1,21 @@
 {
   "presets": [
     [
-      "env",
+      "@babel/preset-env",
       {
-        "modules": false
+        "modules": false,
+        "targets": ">1%",
+        "loose": true,
+        "bugfixes": true
       }
     ]
   ],
   "plugins": [
-    "external-helpers"
+    [
+      "@babel/plugin-proposal-class-properties",
+      {
+        "loose": true
+      }
+    ]
   ]
 }

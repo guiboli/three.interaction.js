@@ -40,7 +40,7 @@ class Ticker extends EventDispatcher {
     const loop = () => {
       this.timeline();
       this.emit('tick', { snippet: this.snippet });
-      this.timer = RAF(loop);
+      this.timer = window.RAF(loop);
     };
     loop();
   }
@@ -49,7 +49,7 @@ class Ticker extends EventDispatcher {
    * stop tick loop
    */
   stop() {
-    CAF(this.timer);
+    window.CAF(this.timer);
     this.started = false;
   }
 

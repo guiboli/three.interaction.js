@@ -11,7 +11,7 @@ export default {
       file: 'build/three.interaction.js',
     },
     {
-      format: 'es',
+      format: 'esm',
       file: 'build/three.interaction.module.js',
     },
   ],
@@ -21,11 +21,11 @@ export default {
     }),
   ],
   extend: true,
-  external: [ 'three' ],
+  external: ['three'],
   globals: {
     three: 'THREE',
   },
   watch: {
-    exclude: [ 'node_modules/**' ],
+    exclude: ['node_modules/**'],
   },
 };
